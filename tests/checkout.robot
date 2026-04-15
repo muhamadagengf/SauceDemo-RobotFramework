@@ -14,7 +14,7 @@ Test Teardown    Close Browser
 
 *** Test Cases ***
 user checkout sampai berhasil
-    Open Chrome Clean
+    Open Chrome Browser
     login dengan credential    ${valid-username}    ${valid-password}
     add product
     fill checkout information    ageng    cobain    2323

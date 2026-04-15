@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+results/
+log.html
+report.html
+output.xml
+allure-results/
+allure-report/
+venv/
+.venv/
+node_modules/
+.playwright/
