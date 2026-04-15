@@ -11,9 +11,10 @@ ${valid-username}    standard_user
 ${valid-password}    secret_sauce
 
 *** Keywords ***
-Open sauce demo
-    Open Browser    ${url_login}    ${browser}
-    Maximize Browser Window
+# Open sauce demo
+#     Open Browser    ${url_login}    ${browser}
+#     Maximize Browser Window
+
     
 login dengan credential
     [Arguments]    ${username}    ${password}

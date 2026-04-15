@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2026-04-15T16:51:07.939594" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2026-04-15T17:06:38.784831" rpa="false" schemaversion="5">
 <suite id="s1" name="SauceDemoRobot" source="C:\Users\Ageng Rock n Roll\SauceDemoRobot">
 <suite id="s1-s1" name="Tests" source="C:\Users\Ageng Rock n Roll\SauceDemoRobot\tests">
-<suite id="s1-s1-s1" name="Checkout" source="C:\Users\Ageng Rock n Roll\SauceDemoRobot\tests\checkout.robot">
-<test id="s1-s1-s1-t1" name="user checkout sampai berhasil" line="16">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\Ageng Rock n Roll\SauceDemoRobot\tests\login.robot">
+<test id="s1-s1-s1-t1" name="Login Berhasil" line="7">
 <kw name="Open Chrome Browser" owner="browser">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.480026" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001274019CAA0&gt;</msg>
+<msg time="2026-04-15T17:06:39.320629" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B518FB90&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.480026" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-15T17:06:39.320629" elapsed="0.001757"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.488611" level="INFO">${headless} = --headless</msg>
+<msg time="2026-04-15T17:06:39.323743" level="INFO">${headless} = --headless</msg>
 <var>${headless}</var>
 <arg>--headless</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.480026" elapsed="0.009140"/>
+<status status="PASS" start="2026-04-15T17:06:39.322386" elapsed="0.001357"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.490303" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<msg time="2026-04-15T17:06:39.325276" level="INFO">${no_sandbox} = --no-sandbox</msg>
 <var>${no_sandbox}</var>
 <arg>--no-sandbox</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.489736" elapsed="0.000567"/>
+<status status="PASS" start="2026-04-15T17:06:39.324783" elapsed="0.001061"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.491438" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<msg time="2026-04-15T17:06:39.327169" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
 <var>${disable_dev_shm}</var>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.490888" elapsed="0.001088"/>
+<status status="PASS" start="2026-04-15T17:06:39.325844" elapsed="0.001325"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.493119" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<msg time="2026-04-15T17:06:39.328421" level="INFO">${window_size} = --window-size=1920,1080</msg>
 <var>${window_size}</var>
 <arg>--window-size=1920,1080</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.492559" elapsed="0.001131"/>
+<status status="PASS" start="2026-04-15T17:06:39.328421" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.494828" level="INFO">${incognito} = --incognito</msg>
+<msg time="2026-04-15T17:06:39.330021" level="INFO">${incognito} = --incognito</msg>
 <var>${incognito}</var>
 <arg>--incognito</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.494249" elapsed="0.001244"/>
+<status status="PASS" start="2026-04-15T17:06:39.328421" elapsed="0.001600"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.496584" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<msg time="2026-04-15T17:06:39.330021" level="INFO">${disable_notifications} = --disable-notifications</msg>
 <var>${disable_notifications}</var>
 <arg>--disable-notifications</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.496035" elapsed="0.001087"/>
+<status status="PASS" start="2026-04-15T17:06:39.330021" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${headless}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.497734" elapsed="0.000583"/>
+<status status="PASS" start="2026-04-15T17:06:39.330021" elapsed="0.002883"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${no_sandbox}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.498860" elapsed="0.000554"/>
+<status status="PASS" start="2026-04-15T17:06:39.332904" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${disable_dev_shm}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.499961" elapsed="0.000521"/>
+<status status="PASS" start="2026-04-15T17:06:39.332904" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${window_size}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.500482" elapsed="0.001091"/>
+<status status="PASS" start="2026-04-15T17:06:39.332904" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${incognito}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.501573" elapsed="0.000548"/>
+<status status="PASS" start="2026-04-15T17:06:39.332904" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${disable_notifications}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.502753" elapsed="0.000567"/>
+<status status="PASS" start="2026-04-15T17:06:39.332904" elapsed="0.006202"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-04-15T16:51:08.504409" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2026-04-15T17:06:39.340906" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
 <var>${prefs}</var>
 <arg>credentials_enable_service=${False}</arg>
 <arg>profile.password_manager_enabled=${False}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.503320" elapsed="0.001607"/>
+<status status="PASS" start="2026-04-15T17:06:39.340906" elapsed="0.001549"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -111,175 +111,984 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.505448" elapsed="0.000554"/>
+<status status="PASS" start="2026-04-15T17:06:39.342455" elapsed="0.001224"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:08.507983" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2026-04-15T17:06:39.343679" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-15T16:51:08.506675" elapsed="7.771609"/>
+<status status="PASS" start="2026-04-15T17:06:39.343679" elapsed="2.765522"/>
 </kw>
-<status status="PASS" start="2026-04-15T16:51:08.480026" elapsed="7.798258"/>
+<status status="PASS" start="2026-04-15T17:06:39.318616" elapsed="2.790585"/>
 </kw>
 <kw name="login dengan credential" owner="login.page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:16.282007" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2026-04-15T17:06:42.113180" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>${field-username}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:16.279832" elapsed="0.205776"/>
+<status status="PASS" start="2026-04-15T17:06:42.113180" elapsed="0.199398"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:16.488533" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2026-04-15T16:51:16.563077" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-15T17:06:42.312578" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:06:42.375908" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${field-password}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:16.488533" elapsed="0.164104"/>
+<status status="PASS" start="2026-04-15T17:06:42.312578" elapsed="0.159062"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:16.652637" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2026-04-15T17:06:42.471640" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${btn-login}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:16.652637" elapsed="0.197243"/>
+<status status="PASS" start="2026-04-15T17:06:42.471640" elapsed="0.204270"/>
 </kw>
 <arg>${valid-username}</arg>
 <arg>${valid-password}</arg>
-<status status="PASS" start="2026-04-15T16:51:16.279832" elapsed="0.573219"/>
+<status status="PASS" start="2026-04-15T17:06:42.111669" elapsed="0.565359"/>
 </kw>
-<kw name="add product" owner="checkout.page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${add-saucelabsbackpack}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T16:51:16.853051" elapsed="0.053261"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:16.906312" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-backpack'.</msg>
-<arg>${add-saucelabsbackpack}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:16.906312" elapsed="0.121392"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>css=.shopping_cart_badge</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T16:51:17.028803" elapsed="0.033985"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:17.062788" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
-<arg>${cart-icon}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:17.062788" elapsed="0.126089"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${btn-checkout}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T16:51:17.192279" elapsed="0.028286"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:17.225306" level="INFO">Clicking button 'id=checkout'.</msg>
-<arg>${btn-checkout}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:17.220565" elapsed="0.151529"/>
-</kw>
-<status status="PASS" start="2026-04-15T16:51:16.853051" elapsed="0.519043"/>
-</kw>
-<kw name="fill checkout information" owner="checkout.page">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T16:51:27.373792" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T16:51:17.373596" elapsed="10.000196"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${field-first_name}</arg>
-<arg>100s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T16:51:27.375806" elapsed="0.054582"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:27.432322" level="INFO">Typing text 'ageng' into text field 'id=first-name'.</msg>
-<arg>${field-first_name}</arg>
-<arg>${fname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:27.430388" elapsed="0.199215"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:27.631617" level="INFO">Typing text 'cobain' into text field 'id=last-name'.</msg>
-<arg>${field-last_name}</arg>
-<arg>${lname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:27.629603" elapsed="0.151971"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:27.783591" level="INFO">Typing text '2323' into text field 'id=postal-code'.</msg>
-<arg>${field-zip}</arg>
-<arg>${zip}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:27.781574" elapsed="0.171962"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:27.953536" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>${btn-continue}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:27.953536" elapsed="0.161275"/>
-</kw>
-<arg>ageng</arg>
-<arg>cobain</arg>
-<arg>2323</arg>
-<status status="PASS" start="2026-04-15T16:51:17.373596" elapsed="10.741215"/>
-</kw>
-<kw name="Checkout" owner="checkout.page">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T16:51:30.118420" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T16:51:28.118035" elapsed="2.000385"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Checkout: Overview</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T16:51:30.118420" elapsed="0.013816"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${btn-finish}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-04-15T16:51:30.132236" elapsed="0.049185"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T16:51:30.183909" level="INFO">Clicking element 'id=finish'.</msg>
-<arg>${btn-finish}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T16:51:30.181421" elapsed="0.119039"/>
-</kw>
-<status status="PASS" start="2026-04-15T16:51:28.114811" elapsed="2.185649"/>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:42.703219" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-15T17:06:42.677028" elapsed="0.028548"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-15T16:51:30.300460" elapsed="3.952348"/>
+<status status="PASS" start="2026-04-15T17:06:42.706947" elapsed="2.185758"/>
 </kw>
-<status status="PASS" start="2026-04-15T16:51:08.471239" elapsed="25.781569"/>
+<status status="PASS" start="2026-04-15T17:06:39.310523" elapsed="5.584396"/>
 </test>
-<status status="PASS" start="2026-04-15T16:51:08.018908" elapsed="26.245344"/>
+<test id="s1-s1-s1-t2" name="Login dengan username salah" line="13">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.913892" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51AD910&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.912654" elapsed="0.001238"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.913892" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.913892" elapsed="0.002547"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.916951" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.916951" elapsed="0.001045"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.918690" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.917996" elapsed="0.001598"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.921257" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.919594" elapsed="0.001663"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.922181" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.921777" elapsed="0.001252"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.924212" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.923029" elapsed="0.001704"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.925038" elapsed="0.000868"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.925906" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.928065" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.928065" elapsed="0.001329"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.929394" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.930775" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:06:44.930775" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.930775" elapsed="0.002045"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.932820" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:44.932820" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:06:44.932820" elapsed="2.670722"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:44.912218" elapsed="2.691324"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:47.605456" level="INFO">Typing text 'userbogeng' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:47.605456" elapsed="0.190586"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:47.796042" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:06:47.854093" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:47.796042" elapsed="0.153368"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:47.950537" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:47.949995" elapsed="0.156388"/>
+</kw>
+<arg>userbogeng</arg>
+<arg>${valid-password}</arg>
+<status status="PASS" start="2026-04-15T17:06:47.603542" elapsed="0.502841"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:06:48.106383" elapsed="2.214319"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:44.903541" elapsed="5.417161"/>
+</test>
+<test id="s1-s1-s1-t3" name="Login dengan password salah" line="18">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.336725" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51AD910&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.336725" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.338249" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.338249" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.338249" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.338249" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.338249" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.338249" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.342477" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.342477" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.342477" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.342477" elapsed="0.008171"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.351179" elapsed="0.000614"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.352124" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:06:50.353176" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.353176" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.353176" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:50.356215" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:06:50.353176" elapsed="2.570845"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:50.334744" elapsed="2.590998"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:52.928296" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:52.925742" elapsed="0.230403"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:53.157500" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:06:53.216068" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:53.157500" elapsed="0.143085"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:53.303079" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:53.300585" elapsed="0.136419"/>
+</kw>
+<arg>${valid-username}</arg>
+<arg>salahpass</arg>
+<status status="PASS" start="2026-04-15T17:06:52.925742" elapsed="0.511262"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:06:53.437004" elapsed="2.172226"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:50.328045" elapsed="5.281601"/>
+</test>
+<test id="s1-s1-s1-t4" name="Login dengan username dan password salah" line="23">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.627137" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51DAED0&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.625571" elapsed="0.001566"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.628643" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.627137" elapsed="0.001506"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.628643" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.628643" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.628643" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.628643" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.633032" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.628643" elapsed="0.004389"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.633032" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.633032" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.635627" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.635045" elapsed="0.002194"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.637239" elapsed="0.001337"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.638576" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.640239" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.640239" elapsed="0.001055"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.641294" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.641294" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:06:55.643257" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.641294" elapsed="0.001963"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.643257" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:55.645271" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:06:55.645271" elapsed="2.601678"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:55.625571" elapsed="2.621378"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:58.246949" level="INFO">Typing text 'salahuser' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:58.246949" elapsed="0.238718"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:58.488239" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:06:58.567821" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:58.488239" elapsed="0.170286"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:06:58.658927" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:06:58.658927" elapsed="0.143358"/>
+</kw>
+<arg>salahuser</arg>
+<arg>salah pass</arg>
+<status status="PASS" start="2026-04-15T17:06:58.246949" elapsed="0.555336"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:06:58.802285" elapsed="2.190858"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:06:55.618476" elapsed="5.375724"/>
+</test>
+<test id="s1-s1-s1-t5" name="Login dengan tidak mengisi username" line="28">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.011394" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51D9D60&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.009382" elapsed="0.002012"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.012923" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.012412" elapsed="0.000511"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.012923" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.012923" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.012923" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.012923" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.012923" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.012923" elapsed="0.004749"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.017672" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.017672" elapsed="0.002012"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.020696" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.019684" elapsed="0.001012"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.020696" elapsed="0.002551"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.023247" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.023247" elapsed="0.001634"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.024881" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.024881" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.024881" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:07:01.024881" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.024881" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.029110" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:01.029110" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:07:01.029110" elapsed="2.591503"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:01.009382" elapsed="2.612438"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:03.621820" level="INFO">Typing text '' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:03.621820" elapsed="0.174881"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:03.799700" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:07:03.874358" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:03.799700" elapsed="0.188603"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:03.988303" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:03.988303" elapsed="0.145242"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${valid-password}</arg>
+<status status="PASS" start="2026-04-15T17:07:03.621820" elapsed="0.511725"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:07:04.135559" elapsed="2.156795"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:01.003541" elapsed="5.288813"/>
+</test>
+<test id="s1-s1-s1-t6" name="Login dengan tidak mengisi password" line="33">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.309042" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51ACE90&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.309042" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.311184" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.311184" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.313240" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.311184" elapsed="0.002056"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.313240" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.313240" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.313240" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.313240" elapsed="0.002798"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.316038" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.316038" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.317860" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.317860" elapsed="0.001420"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.320377" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.320377" elapsed="0.001509"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.321886" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.321886" elapsed="0.001633"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.323519" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.324574" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:07:06.324574" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.324574" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.326351" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:06.328484" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:07:06.326351" elapsed="2.544059"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:06.308528" elapsed="2.561882"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:08.872424" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:08.872424" elapsed="0.207666"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:09.080090" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:07:09.145830" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:09.080090" elapsed="0.132788"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:09.212878" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:09.212878" elapsed="0.137964"/>
+</kw>
+<arg>${valid-username}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-04-15T17:07:08.870410" elapsed="0.481599"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:07:09.352009" elapsed="2.166459"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:06.298125" elapsed="5.220343"/>
+</test>
+<test id="s1-s1-s1-t7" name="Login dengan tidak mengisi username dan password" line="38">
+<kw name="Open Chrome Browser" owner="browser">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.536205" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001C7B51DBAA0&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.536205" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.537827" level="INFO">${headless} = --headless</msg>
+<var>${headless}</var>
+<arg>--headless</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.537827" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.537827" level="INFO">${no_sandbox} = --no-sandbox</msg>
+<var>${no_sandbox}</var>
+<arg>--no-sandbox</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.537827" elapsed="0.003028"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.540855" level="INFO">${disable_dev_shm} = --disable-dev-shm-usage</msg>
+<var>${disable_dev_shm}</var>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.540855" elapsed="0.001364"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.542219" level="INFO">${window_size} = --window-size=1920,1080</msg>
+<var>${window_size}</var>
+<arg>--window-size=1920,1080</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.542219" elapsed="0.001090"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.543309" level="INFO">${incognito} = --incognito</msg>
+<var>${incognito}</var>
+<arg>--incognito</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.543309" elapsed="0.001540"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.544849" level="INFO">${disable_notifications} = --disable-notifications</msg>
+<var>${disable_notifications}</var>
+<arg>--disable-notifications</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.544849" elapsed="0.001814"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${headless}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.546663" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${no_sandbox}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.546663" elapsed="0.001791"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_dev_shm}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.548454" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${window_size}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.548454" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${incognito}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.548454" elapsed="0.002013"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>${disable_notifications}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.550467" elapsed="0.000738"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-15T17:07:11.552275" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>credentials_enable_service=${False}</arg>
+<arg>profile.password_manager_enabled=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.551205" elapsed="0.001937"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.553968" elapsed="0.000849"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:11.556047" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-15T17:07:11.555437" elapsed="2.627163"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:11.535193" elapsed="2.648696"/>
+</kw>
+<kw name="login dengan credential" owner="login.page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:14.185540" level="INFO">Typing text '' into text field 'id=user-name'.</msg>
+<arg>${field-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:14.185540" elapsed="0.178384"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:14.363924" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-15T17:07:14.431828" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${field-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:14.363924" elapsed="0.135918"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-15T17:07:14.499842" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${btn-login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-15T17:07:14.499842" elapsed="0.157251"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-04-15T17:07:14.183889" elapsed="0.473204"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-15T17:07:14.658617" elapsed="2.208923"/>
+</kw>
+<status status="PASS" start="2026-04-15T17:07:11.529120" elapsed="5.340041"/>
+</test>
+<status status="PASS" start="2026-04-15T17:06:38.901865" elapsed="37.975093"/>
 </suite>
-<status status="PASS" start="2026-04-15T16:51:08.011275" elapsed="26.260007"/>
+<status status="PASS" start="2026-04-15T17:06:38.893755" elapsed="37.991713"/>
 </suite>
-<status status="PASS" start="2026-04-15T16:51:07.951961" elapsed="26.325439"/>
+<status status="PASS" start="2026-04-15T17:06:38.798709" elapsed="38.093547"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="SauceDemoRobot">SauceDemoRobot</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">SauceDemoRobot.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Checkout">SauceDemoRobot.Tests.Checkout</stat>
+<stat pass="7" fail="0" skip="0" id="s1" name="SauceDemoRobot">SauceDemoRobot</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s1" name="Tests">SauceDemoRobot.Tests</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s1-s1" name="Login">SauceDemoRobot.Tests.Login</stat>
 </suite>
 </statistics>
 <errors>
