@@ -6,6 +6,17 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * *'   # 20:00 WIB
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   test:
@@ -30,9 +41,39 @@ jobs:
           mkdir -p results
           python -m robot -d results tests/
 
-      - name: Upload Robot results
+      - name: Upload Robot results artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: robot-results
           path: results/
+
+      - name: Prepare Pages files
+        if: always()
+        run: |
+          mkdir -p public
+          cp -r results/* public/
+          cp public/report.html public/index.html
+
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+  deploy:
+    if: always() && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
